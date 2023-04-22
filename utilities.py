@@ -9,13 +9,15 @@ def series_to_supervised(data: pd.DataFrame, groupby_cols: List[str], value_cols
     The output is a wide-format dataframe. This method creates (1, ..., window) features for each of the columns in `data`.
     """
     cols = list()
+    
+    # Current time step (t=0)
+    cols.append(data)
+    
     # Input sequence (t-n, ... t-1)
     for i in range(window, 0, -1):
         new_names = {name: f"{name}(t-{i})" for name in value_cols}
         cols.append(data.groupby(groupby_cols)[value_cols].shift(i).rename(columns=new_names))
         
-    # Current time step (t=0)
-    cols.append(data)
     # Target time step (t=lag)
     new_names = {name: f"{name}(t+{lag})" for name in value_cols}
     cols.append(data.groupby(groupby_cols)[value_cols].shift(-lag).rename(columns=new_names))
