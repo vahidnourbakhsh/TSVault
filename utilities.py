@@ -11,7 +11,8 @@ def series_to_supervised(data: pd.DataFrame, groupby_cols: List[str], value_cols
     cols = list()
     
     # Current time step (t=0)
-    cols.append(data)
+    new_names = {name: f"{name}(t)" for name in value_cols}
+    cols.append(data.rename(columns=new_names))
     
     # Input sequence (t-n, ... t-1)
     for i in range(window, 0, -1):
