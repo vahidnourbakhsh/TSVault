@@ -7,6 +7,14 @@ def series_to_supervised(data: pd.DataFrame, groupby_cols: List[str], value_cols
                          window=1, lag=1, dropnan=True):
     """Use history according to `window` size to predict the future specified in `lag`.
     The output is a wide-format dataframe. This method creates (1, ..., window) features for each of the columns in `data`.
+
+    Args:
+        data (pd.DataFrame): Input dataframe
+        groupby_cols (List[str]): columns that are grouped. For example, if you are predicting demand for each (store, item), both store and item would be grouped_cols.
+        value_cols (List[str]): Columns used for prediction, meaning we look at the history of these columns according to `window` size.
+        window (int, optional): History window we would want to use for prediction (applies to `value_cols`). Defaults to 1.
+        lag (int, optional): Future period we want to predict (applies to `value_cols`). Defaults to 1.
+        dropnan (bool, optional): When we shift `val_cols` some values would be Null, by default the functions removes these records. Defaults to True.
     """
     cols = list()
     
