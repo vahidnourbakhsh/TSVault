@@ -3,7 +3,7 @@
 import pandas as pd
 from datetime import date
 
-from utilities import series_to_supervised
+from utilities.utilities import series_to_supervised
 
 
 def test_series_to_supervised():
