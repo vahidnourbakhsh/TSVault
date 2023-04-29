@@ -1,35 +1,3 @@
-# name: Python application
-
-# on:
-#   push:
-#     branches: [ "main" ]
-#   pull_request:
-#     branches: [ "main" ]
-
-# permissions:
-#   contents: read
-
-# jobs:
-#   example-3:
-#     name: build
-#     runs-on: "ubuntu-latest"
-#     defaults:
-#       run:
-#         shell: bash -el {0}
-#     steps:
-#       - uses: actions/checkout@v2
-#       - uses: conda-incubator/setup-miniconda@v2
-#         with:
-#           activate-environment: anaconda-client-env
-#           environment-file: environment_mini.yml
-#           python-version: 3.9
-#           # condarc-file: etc/example-condarc.yml
-#           auto-activate-base: false
-#       - run: |
-#           conda info
-#           conda list
-
-
 name: Python Package using Conda
 
 on: [push]
@@ -52,7 +20,7 @@ jobs:
         echo $CONDA/bin >> $GITHUB_PATH
     - name: Install dependencies
       run: |
-        conda env update --file environment_mini.yml --name base
+        conda env update --file environment.yml --name base
     # - name: Lint with flake8
     #   run: |
     #     conda install flake8
