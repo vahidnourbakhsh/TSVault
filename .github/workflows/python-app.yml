@@ -21,7 +21,7 @@ jobs:
     - name: Install dependencies
       run: |
         conda env update --file environment.yml --name base
-    - name: Format
+    - name: Format with Black
       run: |
         black tests utilities natural_language_processing
     - name: Test with pytest
