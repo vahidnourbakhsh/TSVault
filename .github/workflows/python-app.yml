@@ -23,7 +23,7 @@ jobs:
         conda env update --file environment.yml --name base
     - name: Format with Black
       run: |
-        black tests utilities natural_language_processing
+        black --check --verbose tests utilities natural_language_processing
     - name: Test with pytest
       run: |
         pytest tests
