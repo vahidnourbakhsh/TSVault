@@ -1,5 +1,9 @@
 # time-series
 
+[![Python Package using Conda](https://github.com/vahidnourbakhsh/time-series/actions/workflows/python-app.yml/badge.svg)](https://github.com/vahidnourbakhsh/time-series/actions/workflows/python-app.yml)
+
+## about
+
 Tutorials, models and utility functions for time series analysis with applications in demand forecasting.
 
 ## utilities
