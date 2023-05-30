@@ -1,4 +1,5 @@
 # TSVault
+![plot](./src/docs/logo-color.png)
 
 [![Python Package using Conda](https://github.com/vahidnourbakhsh/time-series/actions/workflows/python-app.yml/badge.svg)](https://github.com/vahidnourbakhsh/time-series/actions/workflows/python-app.yml)
 
