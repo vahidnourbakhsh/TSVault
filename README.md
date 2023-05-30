@@ -1,10 +1,10 @@
-# time-series
+# TSVault
 
 [![Python Package using Conda](https://github.com/vahidnourbakhsh/time-series/actions/workflows/python-app.yml/badge.svg)](https://github.com/vahidnourbakhsh/time-series/actions/workflows/python-app.yml)
 
 ## about
 
-Tutorials, models and utility functions for time series analysis with applications in demand forecasting.
+Tutorials, models and utility functions for time series analysis.
 
 ## utilities
 
