@@ -1,4 +1,4 @@
-name: py310mini
+name: py310
 channels:
   - conda-forge
   - defaults
@@ -12,5 +12,6 @@ dependencies:
   - tensorflow
   - keras
   - gensim
-  - darts
   - ipykernel
+  - pip:
+      - darts
