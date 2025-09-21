@@ -13,3 +13,4 @@ dependencies:
   - keras
   - gensim
   - darts
+  - ipykernel
