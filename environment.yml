@@ -226,4 +226,3 @@ dependencies:
   - zipp=3.11.0
   - zlib=1.2.13
   - zstd=1.5.5
-prefix: /Users/snour15/opt/anaconda3/envs/py39mini
