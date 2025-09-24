@@ -1,5 +1,5 @@
-"""Utility functions used for our time series data preparation.
-"""
+"""Utility functions used for our time series data preparation."""
+
 import pandas as pd
 from typing import List
 
