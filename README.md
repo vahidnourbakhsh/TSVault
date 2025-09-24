@@ -1,7 +1,7 @@
 # TSVault
 ![TSVault Logo](./docs/logo/logo-color-narrow.png)
 
-[![Python Package using Conda](https://github.com/vahidnourbakhsh/time-series/actions/workflows/python-app.yml/badge.svg)](https://github.com/vahidnourbakhsh/time-series/actions/workflows/python-app.yml)
+[![Python Package using Conda](https://github.com/vahidnourbakhsh/TSVault/actions/workflows/python-app.yml/badge.svg)](https://github.com/vahidnourbakhsh/TSVault/actions/workflows/python-app.yml)
 
 ## About
 
