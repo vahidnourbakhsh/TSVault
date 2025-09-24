@@ -8,7 +8,7 @@ Here are the key approaches to calculating prediction distributions and interval
 
 These methods assume that the forecast errors (residuals) follow a specific probability distribution, most commonly a normal distribution.
 With this assumption, a prediction interval can be constructed around the point forecast using the estimated standard deviation of the forecast errors and a multiplier based on the desired confidence level (e.g., 1.96 for a 95% interval).
-While simple to calculate, the assumption of normality might not always hold in real-world time series data, according to OTexts.
+While simple to calculate, the assumption of normality might not always hold in real-world time series data.
 
 ## 2. Bootstrapping
 
