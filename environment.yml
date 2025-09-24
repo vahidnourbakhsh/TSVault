@@ -13,5 +13,6 @@ dependencies:
   - keras
   - gensim
   - ipykernel
-  - pip:
-      - darts
+  - darts
+  - black
+  - pytest
