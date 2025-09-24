@@ -1,5 +1,5 @@
-"""Test utility functions used for our time series data preparation.
-"""
+"""Test utility functions used for our time series data preparation."""
+
 import pandas as pd
 from datetime import date
 
