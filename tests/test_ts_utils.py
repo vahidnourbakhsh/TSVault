@@ -2,8 +2,13 @@
 
 import pandas as pd
 from datetime import date
+import sys
+import os
 
-from utilities.utilities import series_to_supervised
+# Add src to path for imports
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
+
+from tsvault.utilities.utilities import series_to_supervised
 
 
 def test_series_to_supervised():
